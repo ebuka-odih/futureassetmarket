@@ -24,7 +24,7 @@
                     Choose from widest selection of cryptos among OTC brokers. Enjoy better trading terms and more flexible leverage than on tradition crypto exchanges.
                 </p>
                 <div class="image">
-                    <img src="https://boomassetmarket.com/assets/home/wp-content/uploads/2020/04/crypto-image-980x350.png" data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate"> </div>
+                    <img src="{{ asset('img/crypto-image.png') }}"  class="aos-init aos-animate"> </div>
             </div>
             <div class="tabs-box mt-5">
                 <div class="row clearfix">

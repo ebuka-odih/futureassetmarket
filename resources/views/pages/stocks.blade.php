@@ -23,6 +23,7 @@
                 <p>
                     The EU and US stock markets are the largest in the world. Take advantage of the vast market liquidity and dynamic market moves with the top picks of EU and US stocks from Boom Asset Market.
                 </p>
+                <div class="image"> <img src="{{ asset('img/us-stocks.png') }}"  class="aos-init aos-animate"> </div>
             </div>
             <div class="tabs-box mt-5">
                 <div class="row clearfix">

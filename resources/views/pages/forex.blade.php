@@ -24,6 +24,8 @@
                     <p>
                         Build your FX-based portfolio and enjoy benefits not offered by most exchanges, such as near-immediate execution of market orders.
                     </p>
+                    <div class="image"> <img src="{{ asset('img/forex-image.png') }}"  class="aos-init aos-animate"> </div>
+
                 </div>
                 <div class="tabs-box mt-5">
                     <div class="row clearfix">
