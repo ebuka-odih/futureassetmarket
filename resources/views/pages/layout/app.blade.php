@@ -155,30 +155,22 @@
                                                 <li><a href="{{ route('forex') }}">Forex</a></li>
                                                 <li><a href="{{ route('stock') }}">Stocks</a></li>
                                                 <li><a href="{{ route('crypto') }}">Crypto</a></li>
-                                                <li><a href="markets.html">Metals</a></li>
-                                                <li><a href="markets.html">Indices</a></li>
+{{--                                                <li><a href="markets.html">Metals</a></li>--}}
+{{--                                                <li><a href="markets.html">Indices</a></li>--}}
                                             </ul>
                                         </li>
-                                        <li class="dropdown"><a href="index.html">About Us</a>
+                                        <li class="dropdown">
+                                            <a href="#">Services</a>
                                             <ul>
-                                                <li class="dropdown"><a href="index.html">Education</a>
-                                                    <ul>
-                                                        <li><a href="education.html">Education</a></li>
-                                                        <li><a href="education-details.html">Book Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"><a href="index.html">Team</a>
-                                                    <ul>
-                                                        <li><a href="team.html">Our Expert Team</a></li>
-                                                        <li><a href="team-details.html">Team Deatils</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="faq.html">FAQ's</a></li>
-                                                <li><a href="error.html">404</a></li>
+                                                <li><a href="{{ route('about') }}">Client Services</a></li>
+                                                <li><a href="{{ route('deposit_withdrawals') }}">Deposit & Withdrawal</a></li>
+                                                <li><a href="faq.html">Leverage Policy</a></li>
+                                                <li><a href="faq.html">Trading Central</a></li>
+                                                <li><a href="faq.html">Best Execution Policy</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+{{--                                        <li><a href="{{ route('about') }}">About</a></li>--}}
+{{--                                        <li><a href="contact.html">Contact</a></li>--}}
                                     </ul>
 
                                 </div>

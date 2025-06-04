@@ -24,6 +24,7 @@ Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/market/forex', 'pages.forex')->name('forex');
 Route::view('/market/stock', 'pages.stocks')->name('stock');
 Route::view('/market/crypto', 'pages.crypto')->name('crypto');
+Route::view('/deposit-withdrawal', 'pages.deposit_withdrawals')->name('deposit_withdrawals');
 
 
 Route::view('/fcm-disclosure', 'pages.disclosure')->name('disclosure');
