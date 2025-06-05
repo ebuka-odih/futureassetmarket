@@ -164,8 +164,8 @@
                                             <ul>
 {{--                                                <li><a href="{{ route('about') }}">Client Services</a></li>--}}
                                                 <li><a href="{{ route('deposit_withdrawals') }}">Deposit & Withdrawal</a></li>
-                                                <li><a href="faq.html">Leverage Policy</a></li>
-                                                <li><a href="faq.html">Trading Central</a></li>
+{{--                                                <li><a href="faq.html">Leverage Policy</a></li>--}}
+                                                <li><a href="{{ route('trading_central') }}">Trading Central</a></li>
                                                 <li><a href="faq.html">Best Execution Policy</a></li>
                                             </ul>
                                         </li>
