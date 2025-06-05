@@ -28,7 +28,7 @@
                 </div>
                 <div class="tabs-box mt-5">
                     <div class="row clearfix">
-                        <h3>Deposit / Withdrawal</h3>
+                        <h3>Stay in Control of Your Funds</h3>
                         <p>
                             Being able to quickly replenish your account using multiple deposit options can be critical during the fast market moves. At {{ env('APP_NAME') }} we believe that it is crucial you can manage your funds effectively with minimal transaction costs.
                         </p>
