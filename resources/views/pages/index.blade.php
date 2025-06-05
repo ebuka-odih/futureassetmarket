@@ -50,7 +50,7 @@
                         <div class="image-box pr_130 mr_40 pl_150">
                             <figure class="image image-1"><img src="assets/images/resource/mockup-2.png" alt="">
                             </figure>
-                            
+
                             <div class="content-one">
                                 <div class="shape" style="background-image: url(assets/images/shape/shape-23.png);"></div>
                                 <span>Sales</span>
