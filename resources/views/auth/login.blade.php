@@ -3,12 +3,11 @@
 <html lang="zxx" class="js">
 
 <head>
-
+    <base href="../../../">
     <meta charset="utf-8">
-    <meta name="keywords" content="{{ env("APP_NAME")}}, forex trading, stock trading, commodity trading, financial markets, investment strategies, online trading, crypto trading, equity trading, derivatives trading, trading platform, brokerage services, risk management, asset management, futures trading, options trading, market analysis, trading signals, trade execution, financial advisory"/>
-    <meta name="author" content="{{ env("APP_NAME")}}"/>
-    <meta name="robots" content="index, follow"/>
-    <meta name="description" content="{{ env("APP_NAME")}} is a leading trading firm offering expert financial services, including forex, stocks, commodities, and crypto trading. Join us for market insights and profitable investment strategies."/>
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A robust and intuitive trading platform designed to empower traders and investors with advanced tools and insights.">
 
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
@@ -30,14 +29,13 @@
                     <div class="nk-block nk-block-middle nk-auth-body  wide-xs">
                         <div class="brand-logo pb-4 text-center">
                             <a href="{{ route('index') }}" class="logo-link">
-                                <h3>{{ env('APP_NAME') }}</h3>
-{{--                               <img src="{{ asset('img2/logo2.png') }}" style="width:200px; height: 60px" alt=""/>--}}
+                               <h3 style="font-weight: bolder">{{ env('APP_NAME') }}</h3>
                             </a>
                         </div>
                         <div class="card card-bordered">
                             <div class="card-inner card-inner-lg">
-                                <div class="nk-block-head text-center">
-                                   <div class="nk-block-head-content">
+                                <div class="nk-block-head">
+                                    <div class="nk-block-head-content">
                                         <h4 class="nk-block-title">Sign-In</h4>
                                     </div>
                                 </div>

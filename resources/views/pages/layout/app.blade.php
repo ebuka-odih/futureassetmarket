@@ -397,10 +397,9 @@
                                         </div>
                                         <div class="widget-content">
                                             <ul class="links-list clearfix">
-                                                <li><a href="index.html">Forex</a></li>
-                                                <li><a href="index.html">Crypto</a></li>
-                                                <li><a href="index.html">Share CFDs</a></li>
-                                                <li><a href="index.html">MetaTrader 5</a></li>
+                                                <li><a href="{{ route('forex') }}">Forex</a></li>
+                                                <li><a href="{{ route('crypto') }}">Crypto</a></li>
+                                                <li><a href="{{ route('stock') }}">Share CFDs</a></li>
                                             </ul>
                                         </div>
                                     </div>
