@@ -26,6 +26,7 @@ Route::view('/market/stock', 'pages.stocks')->name('stock');
 Route::view('/market/crypto', 'pages.crypto')->name('crypto');
 Route::view('/deposit-withdrawal', 'pages.deposit_withdrawals')->name('deposit_withdrawals');
 Route::view('/trading-central', 'pages.trading_central')->name('trading_central');
+Route::view('/execution_policy', 'pages.execution_policy')->name('execution_policy');
 
 
 Route::view('/fcm-disclosure', 'pages.disclosure')->name('disclosure');
