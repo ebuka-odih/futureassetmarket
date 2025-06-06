@@ -384,8 +384,8 @@
                                         </div>
                                         <div class="widget-content">
                                             <ul class="links-list clearfix">
-                                                <li><a href="index.html">Who we are</a></li>
-                                                <li><a href="contact.html">Contact us</a></li>
+                                                <li><a href="{{ route('about') }}">Who we are</a></li>
+{{--                                                <li><a href="contact.html">Contact us</a></li>--}}
                                             </ul>
                                         </div>
                                     </div>
@@ -411,10 +411,9 @@
                                         </div>
                                         <div class="widget-content">
                                             <ul class="links-list clearfix">
-                                                <li><a href="index.html">FXT Navigator</a></li>
-                                                <li><a href="index.html">Trading Central</a></li>
-                                                <li><a href="index.html">Economic Calendar</a></li>
-                                                <li><a href="index.html">Market Sentiment</a></li>
+{{--                                                <li><a href="{{ route('fam_navigator') }}">FXT Navigator</a></li>--}}
+                                                <li><a href="{{ route('trading_central') }}">Trading Central</a></li>
+                                                <li><a href="{{ route('calendar') }}">Economic Calendar</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -435,7 +434,9 @@
                                 </div>
                             </div>
                             <div class="footer-lower">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
+                                <figure class="footer-logo">
+                                    <a href="index.html"><img src="{{ asset('img2/logo.png') }}" alt="">
+                                    </a></figure>
                             </div>
                         </div>
 

@@ -7,10 +7,6 @@
             <div class="auto-container">
                 <div class="content-box">
                     <h1>About Us</h1>
-                    <ul class="bread-crumb clearfix">
-                        <li><a href="index.html">Home</a></li>
-                        <li>About Us</li>
-                    </ul>
                 </div>
             </div>
         </section>
@@ -25,8 +21,7 @@
                         <div class="content_block_seven">
                             <div class="content-box">
                                 <div class="sec-title pb_50">
-                                    <span class="sub-title mb_14">About US</span>
-                                    <h2>Our reputation is built on <span>Experience</span></h2>
+                                    <h2>Future Asset Market</h2>
                                 </div>
                                 <ul class="accordion-box">
                                     <li class="accordion block active-block">
@@ -36,20 +31,20 @@
                                         </div>
                                         <div class="acc-content current">
                                             <div class="content">
-                                                <p>Facilitating international payments and foreign exchange transactions, issuing credit cards, and more.</p>
-                                                <a href="faq.html">Learn More</a>
+                                               <p>At {{ env('APP_NAME') }}, we know what it’s like to trade. With the scale of a global fintech and the agility of a start-up, we’re here to arm you with everything you need to take on the global markets with confidence.</p>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="accordion block">
                                         <div class="acc-btn">
                                             <div class="icon-box"><i class="icon-29"></i></div>
-                                            <h3>What we do</h3>
+                                            <h3>History</h3>
                                         </div>
                                         <div class="acc-content">
                                             <div class="content">
-                                                <p>Facilitating international payments and foreign exchange transactions, issuing credit cards, and more.</p>
-                                                <a href="faq.html">Learn More</a>
+                                                <p>
+                                                    {{ env('APP_NAME') }} was founded in 2010 in Melbourne, Australia by a team of experienced traders with a shared commitment to improve the world of online trading. Frustrated by delayed executions, expensive prices and poor customer support, we set out to provide traders around the world with superior technology, low-cost spreads and a genuine commitment to helping them master the trade.
+                                                </p>
                                             </div>
                                         </div>
                                     </li>
@@ -72,13 +67,7 @@
                     <div class="col-lg-6 col-md-12 col-sm-12 video-column">
                         <div class="video_block_one">
                             <div class="video-box z_1 p_relative ml_50 centred">
-                                <figure class="image-box"><img src="assets/images/resource/video-1.png" alt=""></figure>
-                                <div class="video-content">
-                                    <div class="curve-text">
-                                        <span class="curved-circle">watch&nbsp;&nbsp;the&nbsp;&nbsp;video&nbsp;&nbsp;right&nbsp;&nbsp;now&nbsp;&nbsp;</span>
-                                    </div>
-                                    <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image video-btn" data-caption=""><i class="icon-11"></i></a>
-                                </div>
+                                <figure class="image-box"><img src="{{ asset('img2/banner.png') }}" alt=""></figure>
                             </div>
                         </div>
                     </div>
@@ -225,116 +214,6 @@
         <!-- account-style-three end -->
 
 
-        <!-- apps-style-two -->
-        <section class="apps-style-two pt_150 pb_150">
-            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-18.png);"></div>
-            <figure class="image-layer"><img src="assets/images/resource/mockup-1.png" alt=""></figure>
-            <div class="auto-container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-12 col-sm-12 content-column">
-                        <div class="content_block_four">
-                            <div class="content-box ml_80">
-                                <div class="sec-title light pb_40">
-                                    <span class="sub-title mb_14">Download App</span>
-                                    <h2>Download Trading App</h2>
-                                    <p>We use cookines to understand how you use our website and to give you the best possible experience.</p>
-                                </div>
-                                <div class="btn-box">
-                                    <a href="about.html" class="apple-store">
-                                        <img src="assets/images/icons/icon-7.png" alt="">
-                                        <span>Download on</span>
-                                        App Store
-                                    </a>
-                                    <a href="about.html" class="play-store">
-                                        <img src="assets/images/icons/icon-8.png" alt="">
-                                        <span>Get it on</span>
-                                        Google Play
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- apps-style-two end -->
-
-
-        <!-- testimonial-section -->
-        <section class="testimonial-section centred pt_100 pb_90">
-            <div class="auto-container">
-                <div class="sec-title pb_60">
-                    <span class="sub-title mb_14">Testimonials</span>
-                    <h2>Love from Clients</h2>
-                </div>
-                <div class="inner-container">
-                    <div class="thumb-box">
-                        <div class="thumb thumb-1"><img src="assets/images/resource/thumb-1.png" alt=""></div>
-                        <div class="thumb thumb-2"><img src="assets/images/resource/thumb-2.png" alt=""></div>
-                        <div class="thumb thumb-3"><img src="assets/images/resource/thumb-3.png" alt=""></div>
-                        <div class="thumb thumb-4"><img src="assets/images/resource/thumb-4.png" alt=""></div>
-                        <div class="thumb thumb-5"><img src="assets/images/resource/thumb-5.png" alt=""></div>
-                        <div class="thumb thumb-6"><img src="assets/images/resource/thumb-6.png" alt=""></div>
-                        <div class="thumb thumb-7"><img src="assets/images/resource/thumb-7.png" alt=""></div>
-                        <div class="thumb thumb-8"><img src="assets/images/resource/thumb-8.png" alt=""></div>
-                    </div>
-                    <div class="single-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
-                        <div class="testimonial-content">
-                            <h2>“Crypto investor makes my investment work efficient and pleasant”</h2>
-                            <p>Navigate the financial waves with FXT’s premier trading app, designed to put the power of the markets in your palm. Our cutting-edge app blends sophisticated functionalityanywhere.</p>
-                            <h3>Roger Federal</h3>
-                            <span class="designation">Uses Saxolvestor</span>
-                        </div>
-                        <div class="testimonial-content">
-                            <h2>“Crypto investor makes my investment work efficient and pleasant”</h2>
-                            <p>Navigate the financial waves with FXT’s premier trading app, designed to put the power of the markets in your palm. Our cutting-edge app blends sophisticated functionalityanywhere.</p>
-                            <h3>Roger Federal</h3>
-                            <span class="designation">Uses Saxolvestor</span>
-                        </div>
-                        <div class="testimonial-content">
-                            <h2>“Crypto investor makes my investment work efficient and pleasant”</h2>
-                            <p>Navigate the financial waves with FXT’s premier trading app, designed to put the power of the markets in your palm. Our cutting-edge app blends sophisticated functionalityanywhere.</p>
-                            <h3>Roger Federal</h3>
-                            <span class="designation">Uses Saxolvestor</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- testimonial-section end -->
-
-
-
-        <!-- subscribe-section -->
-        <section class="subscribe-section">
-            <div class="bg-color"></div>
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="shape" style="background-image: url(assets/images/shape/shape-5.png);"></div>
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-12 col-sm-12 text-column">
-                            <div class="text-box">
-                                <h2>Subscribe for latest update</h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 form-column">
-                            <div class="form-inner">
-                                <form method="post" action="https://azim.hostlin.com/Fortradex/contact.html">
-                                    <div class="form-group">
-                                        <input type="email" name="email" placeholder="Email Address" required>
-                                        <button type="submit" class="theme-btn btn-one">Subscribe<i class="icon-26"></i></button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- subscribe-section end -->
-
-
-
-
+    
 
 @endsection
