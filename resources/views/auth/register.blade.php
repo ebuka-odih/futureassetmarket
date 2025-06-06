@@ -2,13 +2,12 @@
 <html lang="zxx" class="js">
 
 <head>
+    <base href="../../../">
     <meta charset="utf-8">
-    <meta name="keywords"
-          content="{{ env("APP_NAME")}}, forex trading, stock trading, commodity trading, financial markets, investment strategies, online trading, crypto trading, equity trading, derivatives trading, trading platform, brokerage services, risk management, asset management, futures trading, options trading, market analysis, trading signals, trade execution, financial advisory"/>
-    <meta name="author" content="{{ env("APP_NAME")}}"/>
-    <meta name="robots" content="index, follow"/>
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
-          content="{{ env("APP_NAME")}} is a leading trading firm offering expert financial services, including forex, stocks, commodities, and crypto trading. Join us for market insights and profitable investment strategies."/>
+          content="A robust and intuitive trading platform designed to empower traders and investors with advanced tools and insights.">
 
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
@@ -17,7 +16,6 @@
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('admin/assets/css/dashlite.css?ver=3.1.1') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('admin/assets/css/theme.css?ver=3.1.1') }}">
-
     <style>
         .captcha-container {
             display: flex;
@@ -70,13 +68,13 @@
                 <div class="nk-block nk-block-middle nk-auth-body  wide-xs">
                     <div class="brand-logo pb-4 text-center">
                         <a href="{{ route('index') }}" class="logo-link">
-                            <h3>{{ env('APP_NAME') }}</h3>
-                            {{--                                <img src="{{ asset('img2/logo2.png') }}" style="width:200px; height: 60px" alt=""/>--}}
+                            <img src="{{ asset('img2/logo2.png') }}" height="60" alt="">
+{{--                            <h3 style="font-weight: bolder">{{ env('APP_NAME') }}</h3>--}}
                         </a>
                     </div>
                     <div class="card card-bordered">
                         <div class="card-inner card-inner-lg">
-                            <div class="nk-block-head text-center">
+                            <div class="nk-block-head">
                                 <div class="nk-block-head-content">
                                     <h4 class="nk-block-title">Sign-Up</h4>
                                 </div>
@@ -149,21 +147,24 @@
                                     </div>
                                 </div>
                                 <div class="captcha-container">
-    <img src="{{ captcha_src() }}" id="captcha_image" alt="captcha">
-    <input type="text" name="captcha" required placeholder="Enter CAPTCHA">
+                                    <img src="{{ captcha_src() }}" id="captcha_image" alt="captcha">
+                                    <input type="text" name="captcha" required placeholder="Enter CAPTCHA">
 
-    <button type="button" onclick="refreshCaptcha()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M17.65 6.35A7.96 7.96 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z"/></svg>
-    </button>
-</div>
+                                    <button type="button" onclick="refreshCaptcha()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                  d="M17.65 6.35A7.96 7.96 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z"/>
+                                        </svg>
+                                    </button>
+                                </div>
 
-<script type="text/javascript">
-    function refreshCaptcha() {
-        var captchaImage = document.getElementById('captcha_image');
-        captchaImage.src = '{{ captcha_src() }}' + '?' + Math.random();
-    }
-</script>
-
+                                <script type="text/javascript">
+                                    function refreshCaptcha() {
+                                        var captchaImage = document.getElementById('captcha_image');
+                                        captchaImage.src = '{{ captcha_src() }}' + '?' + Math.random();
+                                    }
+                                </script>
                                 <div class="form-group">
                                     <button class="btn btn-lg btn-primary btn-block">Sign Up</button>
                                 </div>
