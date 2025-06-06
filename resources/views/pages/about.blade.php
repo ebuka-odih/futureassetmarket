@@ -77,70 +77,14 @@
         <!-- about-style-three end -->
 
 
-        <!-- funfact-style-two -->
-        <section class="funfact-style-two centred pb_100">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="row clearfix">
-                        <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
-                            <div class="funfact-block-two">
-                                <div class="shape" style="background-image: url(assets/images/shape/shape-8.png);"></div>
-                                <div class="inner-box">
-                                    <div class="count-outer">
-                                        <span class="odometer" data-count="10">00</span><span>k</span>
-                                    </div>
-                                    <p>Client World Wide</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
-                            <div class="funfact-block-two">
-                                <div class="shape" style="background-image: url(assets/images/shape/shape-8.png);"></div>
-                                <div class="inner-box">
-                                    <div class="count-outer">
-                                        <span class="odometer" data-count="99">00</span><span>%</span>
-                                    </div>
-                                    <p>Satisfied Clients</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
-                            <div class="funfact-block-two">
-                                <div class="shape" style="background-image: url(assets/images/shape/shape-8.png);"></div>
-                                <div class="inner-box">
-                                    <div class="count-outer">
-                                        <span class="odometer" data-count="150">00</span>m+
-                                    </div>
-                                    <p>Money Invested</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
-                            <div class="funfact-block-two">
-                                <div class="shape" style="background-image: url(assets/images/shape/shape-8.png);"></div>
-                                <div class="inner-box">
-                                    <div class="count-outer">
-                                        <span class="odometer" data-count="800">00</span><span>+</span>
-                                    </div>
-                                    <p>Expert Traders</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- funfact-style-two end -->
-
 
         <!-- cta-section -->
         <section class="cta-section">
             <div class="auto-container">
-                <div class="inner-container">
-                    <div class="shape" style="background-image: url(assets/images/shape/shape-16.png);"></div>
-                    <div class="icon-box"><img src="assets/images/icons/coin-1.png" alt=""></div>
-                    <h2><span>Trade for</span> less, <span>with</span> low prices <br /><span>and</span> transparent fees</h2>
-                    <div class="btn-box"><a href="index-3.html" class="theme-btn btn-one">Try Demo Trading</a></div>
+                <div  class="inner-container">
+                    <div class="shape" style="background-image: url(assets/images/shape/shape-16.png); "></div>
+                    <div style="margin: 20px; padding-top: 10px; text-align: center" class="icon-box"><img src="assets/images/icons/coin-1.png" alt=""></div>
+                    <h2  class="text-center text-white mb-4"><span>Power Your Trades with Confidence and Control</span></h2>
                 </div>
             </div>
         </section>
@@ -151,22 +95,27 @@
         <section class="account-style-three pt_100 pb_70">
             <div class="auto-container">
                 <div class="row align-items-center">
+                     <h4 class="text-center">Built for Every Type of Trader</h4>
                     <div class="col-lg-6 col-md-12 col-sm-12 inner-column">
                         <div class="inner-content">
+
                             <div class="row clearfix">
                                 <div class="col-lg-6 col-md-6 col-sm-12 account-block">
                                     <div class="account-block-one pb_1 wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                                         <div class="inner-box">
                                             <div class="icon-box"><i class="icon-01"></i></div>
-                                            <h3><a href="account-details.html">Professional Account</a></h3>
-                                            <p>Traders with professional accounts gain access to a wide range of benefits, including enhanced trading platforms</p>
+                                            <h3><a href="{{ route('register') }}">Standard Account</a></h3>
+                                            <p>
+                                                Perfect for individuals looking to trade with competitive spreads and straightforward conditions. This account offers access to core market features and tools to help you grow steadily in your trading journey.
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="account-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                                         <div class="inner-box">
                                             <div class="icon-box"><i class="icon-03"></i></div>
-                                            <h3><a href="account-details.html">Demo Account</a></h3>
-                                            <p>Trading demo accounts are particularly valuable for novice traders who are new to the world of investing.</p>
+                                            <h3><a href="{{ route('register') }}">Smart Portfolio Account</a></h3>
+                                            <p>Designed for investors who want a broader view of their trading activity. Manage multiple strategies under one roof, track performance, and streamline your experience through a unified dashboard.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -174,15 +123,19 @@
                                     <div class="account-block-one pb_1 wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
                                         <div class="inner-box">
                                             <div class="icon-box"><i class="icon-02"></i></div>
-                                            <h3><a href="account-details.html">Overview Account</a></h3>
-                                            <p>The primary feature of a trading overview account is its ability to aggregate information from multiple accounts and</p>
+                                            <h3><a href="{{ route('register') }}">Practice Account</a></h3>
+                                            <p>
+                                                New to trading? Test the waters with a risk-free demo account. Learn how the market moves, try new strategies, and build confidence before going live — all with simulated funds.
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="account-block-one wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
                                         <div class="inner-box">
                                             <div class="icon-box"><i class="icon-04"></i></div>
-                                            <h3><a href="account-details.html">Islamic Account</a></h3>
-                                            <p>Islamic accounts also adhere to ethical guidelines that prohibit trading certain financial instruments deemed</p>
+                                            <h3><a href="{{ route('register') }}">Ethical Account</a></h3>
+                                            <p>
+Trade in line with values. Our ethical account is structured to respect religious and moral principles by excluding interest-based and restricted financial instruments.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -193,17 +146,18 @@
                         <div class="content_block_eight">
                             <div class="content-box ml_60">
                                 <div class="sec-title pb_20">
-                                    <span class="sub-title mb_14">Accounts</span>
-                                    <h2>Level up your trading with <span>Account</span></h2>
+                                    <h2>Global Trust. Local Presence.</h2>
                                 </div>
                                 <div class="text-box">
-                                    <p>Not sure which is the right FOREX com platform for you? Check out our handy platform comparison table which will show you all the differences.</p>
+                                    <p>
+                                        We serve traders from around the world, backed by transparency, security, and years of industry experience. Whether you're trading full-time or exploring part-time investing, we provide the structure, tools, and support to help you thrive.
+                                    </p>
                                     <ul class="list-style-one mb_40 clearfix">
-                                        <li>Trade with one tap, anywhere, anytime</li>
-                                        <li>Seamlessly manage your account and portfolio</li>
-                                        <li>Stay ahead with real-time charts and indicators</li>
+                                        <li>Trade anytime, from anywhere</li>
+                                        <li>Manage your investments with ease</li>
+                                        <li>Monitor markets with real-time data and insights</li>
                                     </ul>
-                                    <a href="index-3.html" class="theme-btn btn-one">Create Account</a>
+                                    <a href="{{ route('login') }}" class="theme-btn btn-one">Start Trading</a>
                                 </div>
                             </div>
                         </div>
@@ -214,6 +168,6 @@
         <!-- account-style-three end -->
 
 
-    
+
 
 @endsection
