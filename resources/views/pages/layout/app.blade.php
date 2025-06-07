@@ -425,7 +425,7 @@
                                         </div>
                                         <div class="widget-content">
                                             <ul class="links-list clearfix">
-                                                <li><a href="index.html">Privacy Policy</a></li>
+                                                <li><a href="{{ route('privacy_policy') }}">Privacy Policy</a></li>
                                                 <li><a href="index.html">Regulations</a></li>
                                                 <li><a href="index.html">Risk Disclaimer</a></li>
                                             </ul>
