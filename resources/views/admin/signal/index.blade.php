@@ -178,7 +178,7 @@
                                                                         Type</label>
                                                                     <div class="form-control-wrap">
                                                                         <select name="signal_type" id="signal_type"
-                                                                                class="form-control" required>
+                                                                                class="form-control" >
                                                                             <option value="">-- Select Type --</option>
                                                                             <option
                                                                                     value="buy" {{ old('signal_type', $item->signal_type) === 'buy' ? 'selected' : '' }}>
