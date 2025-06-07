@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class TradePairs extends Model
 {
-    //
+   protected $guarded = [];
 }

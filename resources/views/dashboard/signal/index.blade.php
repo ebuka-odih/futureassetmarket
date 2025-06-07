@@ -57,8 +57,8 @@
                                             <div class="card bg-dark text-white mb-4 shadow rounded border-0">
                                                 <div
                                                     class="card-header bg-secondary d-flex justify-content-between align-items-center rounded-top">
-                                                    <h5 class="card-title mb-0 text-uppercase">{{ $item->pair }}</h5>
-                                                    {!! $item->expiry_badge !!}
+                                                    <h5 class="card-title mb-0 text-uppercase">{{ $item->pair['crypto'] ?? $item->pair['stock'] ?? $item->pair['forex']}}</h5>
+                                                    {!! $item->expiry_badge ?? '' !!}
                                                 </div>
 
                                                 <div class="card-body">
