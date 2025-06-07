@@ -39,7 +39,7 @@ class RegisteredUserController extends Controller
             'email' => ['required', 'string', 'lowercase', 'email:rfc,dns', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'username' => ['required', 'unique:'.User::class],
-            'captcha' => 'required|captcha',
+//            'captcha' => 'required|captcha',
         ]);
 
         $refCode = $request->input('ref') ?? $request->query('ref');
