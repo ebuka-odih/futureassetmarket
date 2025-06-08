@@ -95,7 +95,7 @@
                                         <label class="form-label" for="default-01">Name</label>
                                     </div>
                                     <div class="form-control-wrap">
-                                        <input type="text" name="name" class="form-control form-control-lg"
+                                        <input type="text" name="name" value="{{ old('name') }}" class="form-control form-control-lg"
                                                id="default-01" placeholder="Enter your full name">
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                                         <label class="form-label" for="default-01">Email</label>
                                     </div>
                                     <div class="form-control-wrap">
-                                        <input type="email" name="email" class="form-control form-control-lg"
+                                        <input type="email" name="email" value="{{ old('email') }}" class="form-control form-control-lg"
                                                id="default-01" placeholder="Enter your email address">
                                     </div>
                                 </div>
@@ -113,7 +113,7 @@
                                         <label class="form-label" for="default-01">Username</label>
                                     </div>
                                     <div class="form-control-wrap">
-                                        <input type="text" name="username" class="form-control form-control-lg"
+                                        <input type="text" name="username" value="{{ old('username') }}" class="form-control form-control-lg"
                                                id="default-01" placeholder="Enter Your username">
                                     </div>
                                 </div>
