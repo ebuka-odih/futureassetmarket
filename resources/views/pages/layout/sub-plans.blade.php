@@ -32,7 +32,7 @@
 
 <div class="container py-5">
   <h2 class="text-center fw-bold mb-3">CHOOSE YOUR ACCOUNT TYPE</h2>
-  <p class="text-center mb-5">You don’t have an account yet? Start trading with Boom Asset Market</p>
+  <p class="text-center mb-5">You don’t have an account yet? Start trading with {{ env('APP_NAME') }}</p>
 
   <div class="row g-4 justify-content-center">
     <!-- GOLD -->
@@ -51,7 +51,7 @@
     <div class="col-md-4">
       <div class="account-card border">
         <div class="account-title text-white bg-secondary py-2">DIAMOND</div>
-        <p><strong>Starting Deposit</strong><br>$25,000</p>
+        <p><strong>Starting Deposit</strong><br>$30,000</p>
         <p><strong>Instruments</strong><br>FX, Metals, CFDs,<br>Cryptos</p>
         <p><strong>Minimum Lot Size</strong><br>0.01 lots FX</p>
         <p><strong>Max Leverage</strong><br>1:500</p>
