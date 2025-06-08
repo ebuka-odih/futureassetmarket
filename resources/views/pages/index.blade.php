@@ -764,4 +764,52 @@
     </section>
     <!-- trading-style-two end -->
 
+    <section class="account-style-two clear-bg centred pt_80 pb_70">
+            <div class="auto-container">
+                <div class="sec-title pb_50">
+                    <h2>Find your perfect platform</h2>
+                   <p>Trade the world's markets anywhere, anytime, with cutting-edge technology and customisable tools.</p>
+                </div>
+                <div class="row clearfix">
+{{--                    <div class="col-lg-4 col-md-6 col-sm-12 account-block">--}}
+{{--                        <div class="account-block-two wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">--}}
+{{--                            <div class="inner-box">--}}
+{{--                                <div class="icon-bo bg-white"><img style="height: 100px" src="{{ asset('img2/header.png') }}" alt=""></div>--}}
+{{--                                <h3><a href="#">The {{ env('APP_NAME') }} platform</a></h3>--}}
+{{--                                <p>Enjoy a secure, smart and streamlined trading experience on our web platform and mobile app</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+                    <div class="col-lg-4 col-md-6 col-sm-12 account-block">
+                        <div class="account-block-two wow fadeInUp animated animated" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="icon-box bg-white"><img src="{{ asset('img2/Icon_TV.webp') }}" alt=""></div>
+                                <h3><a href="#">TradingView</a></h3>
+                                <p>Replicate an institutional liquidity environment and develop trading robots to automate on your behalf.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 account-block">
+                        <div class="account-block-two wow fadeInUp animated animated" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="icon-box bg-white"><img src="{{ asset('img2/Icon_CT.webp') }}" alt=""></div>
+                                <h3><a href="#">cTrader</a></h3>
+                                <p>Trade directly through show-stopping charts with hundreds of in-built indicators and strategies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 account-block">
+                        <div class="account-block-two wow fadeInUp animated animated" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="icon-box bg-white"><img src="{{ asset('img2/icon_coins-hand.svg') }}" alt=""></div>
+                                <h3><a href="#">Copy Trading</a></h3>
+                                <p>Find and replicate the strategies of experienced traders with our copy trading offering, available on mobile and desktop.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
 @endsection
