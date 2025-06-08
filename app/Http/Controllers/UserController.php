@@ -150,16 +150,13 @@ class UserController extends Controller
         ]));
 
         if ($request->hasFile('id_image_1')) {
-            $user->id_image_1 = $request->file('id_image_1')->store('kyc_ids');
+            $user->id_image_1 = $request->file('id_image_1')->store('files');
         }
 
         if ($request->hasFile('id_image_2')) {
-            $user->id_image_2 = $request->file('id_image_2')->store('kyc_ids');
+            $user->id_image_2 = $request->file('id_image_2')->store('files');
         }
 
-        if ($request->hasFile('avatar')) {
-            $user->avatar = $request->file('avatar')->store('avatars');
-        }
 
         $user->save();
 
