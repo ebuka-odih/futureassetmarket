@@ -396,6 +396,7 @@
     </section>
     <!-- trading-section end -->
 
+    @include('pages.layout.sub-plans')
 
     <!-- funfact-section -->
     <section class="funfact-section mb-3 d-none">
