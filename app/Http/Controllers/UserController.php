@@ -19,10 +19,12 @@ use Illuminate\Support\Facades\Storage;
 class UserController extends Controller
 {
     protected $stockService;
+
     public function __construct(StockService $stockService)
     {
         $this->stockService = $stockService;
     }
+
     public function index()
     {
         $user = Auth::user();
@@ -59,7 +61,7 @@ class UserController extends Controller
         });
 
         $totalInvested = $stocks->sum('total_amount');
-           // Total current value (sum of current values based on latest prices)
+        // Total current value (sum of current values based on latest prices)
         $totalCurrentValue = $stocks->sum('current_value') ?? $totalInvested;
 
         $crypto = CryptoExchange::where('user_id', auth()->id())->sum('amount');
@@ -118,6 +120,50 @@ class UserController extends Controller
     public function loading()
     {
         return view('dashboard.loading');
+    }
+
+
+    public function kycform()
+    {
+        $user = Auth::user();
+        return view('dashboard.kyc', compact('user'));
+    }
+    public function submitKyc(Request $request)
+    {
+        $request->validate([
+            'phone' => 'nullable|string|max:20',
+            'telegram' => 'nullable|string|max:255',
+            'country' => 'nullable|string|max:255',
+            'city' => 'nullable|string|max:255',
+            'address' => 'nullable|string|max:255',
+            'id_type' => 'required|string',
+            'id_image_1' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'id_image_2' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+            'avatar' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+        ]);
+
+        $user = Auth::user();
+
+        $user->fill($request->only([
+            'phone', 'telegram',
+            'country', 'city', 'address', 'id_type'
+        ]));
+
+        if ($request->hasFile('id_image_1')) {
+            $user->id_image_1 = $request->file('id_image_1')->store('kyc_ids');
+        }
+
+        if ($request->hasFile('id_image_2')) {
+            $user->id_image_2 = $request->file('id_image_2')->store('kyc_ids');
+        }
+
+        if ($request->hasFile('avatar')) {
+            $user->avatar = $request->file('avatar')->store('avatars');
+        }
+
+        $user->save();
+
+        return redirect()->back()->with('success', 'KYC details submitted successfully.');
     }
 
 

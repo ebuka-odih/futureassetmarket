@@ -95,6 +95,17 @@
                         <span class="fw-semibold">Crypto Exchange</span>
                     </a>
                 </li>
+                <li class="nav-item ">
+                    <a class="nav-link d-flex gap-2 align-items-center {{ Route::is('user.kycform') ? 'active' : '' }}"
+                       href="{{ route('user.kycform') }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 14 14">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  d="M12.25 1.81V.5M11 5.31c0 .66.53.88 1.25.88s1.25 0 1.25-.88C13.5 4 11 4 11 2.69c0-.88.53-.88 1.25-.88s1.25.33 1.25.88m-1.25 3.5V7.5m-9.75-4h-1a1 1 0 0 0-1 1V9a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V4.5a1 1 0 0 0-1-1M2 10v1.5m0-8v-3m6 7H7a1 1 0 0 0-1 1V10a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V8.5a1 1 0 0 0-1-1M7.5 11v2.5m0-6V4"
+                                  stroke-width="1"/>
+                        </svg>
+                        <span class="fw-semibold">KYC <span>{!! auth()->user()->status() !!}</span></span>
+                    </a>
+                </li>
                 <li class="nav-item d-none">
                     <a class="nav-link d-flex gap-2 align-items-center {{ Route::is('user.stocks') ? 'active' : '' }}"
                        href="{{ route('user.stocks') }}">
@@ -189,6 +200,15 @@
                                           d="M14 14.252v2.09A6 6 0 0 0 6 22H4a8 8 0 0 1 10-7.749M12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6s6 2.685 6 6s-2.685 6-6 6m0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4m6 6v-3h2v3h3v2h-3v3h-2v-3h-3v-2z"/>
                                 </svg>
                                 Referral</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2"
+                               href="{{ route('user.kycform') }}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                          d="M14 14.252v2.09A6 6 0 0 0 6 22H4a8 8 0 0 1 10-7.749M12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6s6 2.685 6 6s-2.685 6-6 6m0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4m6 6v-3h2v3h3v2h-3v3h-2v-3h-3v-2z"/>
+                                </svg>
+                                KYC</a>
                         </li>
                         <li>
                             <a class="dropdown-item d-flex align-items-center gap-2" href="{{ route('user.profile') }}">

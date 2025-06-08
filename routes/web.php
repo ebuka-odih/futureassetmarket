@@ -42,6 +42,8 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('profile', [UserController::class, 'profile'])->name('profile');
     Route::post('update/profile/{id}', [UserController::class, 'updateProfile'])->name('updateProfile');
     Route::post('update/password/', [UserController::class, 'updatePassword'])->name('updatePassword');
+    Route::get('kyc_form/', [UserController::class, 'kycform'])->name('kycform');
+    Route::post('store/kyc_form/', [UserController::class, 'submitKyc'])->name('submitKyc');
 
     Route::get('/referrals', [ReferralController::class, 'index'])->name('referrals.index');
 
