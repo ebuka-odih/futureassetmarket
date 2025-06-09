@@ -178,7 +178,7 @@
                     <a class="d-flex gap-2 align-items-center" href="#" id="navbarDropdown4" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
                         <img style="border-radius: 50%" height="40" width="40" class="img-fluid"
-                             src="{{ asset('storage/'.auth()->user()->avatar ?? 'img/trader.jpg') }}" alt="user">
+                             src="{{ asset('img/trader.jpg') }}" alt="user">
                         <div class="d-flex flex-column d-none d-xl-block">
                             <p class="mb-0 text-white fw-semibold">{{ auth()->user()->name }}</p>
                         </div>
