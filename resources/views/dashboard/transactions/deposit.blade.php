@@ -33,11 +33,11 @@
 
     <div class="container-fluid main-content px-2 px-lg-4">
         <div class="card mt-3 my-2 bg-dark">
-            <div class="card-body">
+            <div class="card-body d-none">
 
                 <ul class="nav nav-pills justify-content-center">
                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('user.deposit') }}">Crypto Deposit</a>
+                    <a class="nav-link active" aria-current="page" href="{{ route('user.deposit') }}"> Deposit</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{{ route('user.bankDeposit') }}">Bank Deposit</a>
@@ -50,7 +50,7 @@
             <div class="right">
               <div style="background-color: #171f2a" class="card my-2 ">
                     <div class="card-header">
-                        <h4 class="mb-0 text-center">Submit Payment</h4>
+                        <h4 class="mb-0 text-center">Make Deposit</h4>
                     </div>
                     <div class="card-body px-3 py-5">
                         <form action="{{ route('user.processDeposit') }}" method="POST" enctype="multipart/form-data"
