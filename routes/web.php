@@ -36,7 +36,7 @@ Route::view('/risk_disclaimer', 'pages.risk')->name('risk_disclaimer');
 Route::view('/fcm-disclosure', 'pages.disclosure')->name('disclosure');
 Route::view('/terms-condition', 'pages.terms')->name('terms');
 
-Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 'user.'], function () {
+Route::group(['middleware' => ['auth'], 'prefix' => 'user', 'as' => 'user.'], function () {
 
     Route::get('/dashboard', [UserController::class, 'index'])->name('dashboard');
     Route::get('profile', [UserController::class, 'profile'])->name('profile');
