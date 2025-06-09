@@ -10,7 +10,7 @@
                   <p class="text-white mb-0">Main Balance</p>
                   <h4 class="fw-semibold text-white my-2">${{ number_format($user->balance, 2) ?? '' }}</h4>
                 </div>
-                <img src="assets/img/crypto/bitcoin.png" alt="">
+{{--                <img src="assets/img/crypto/bitcoin.png" alt="">--}}
               </div>
               <div class="chart">
                 <canvas id="chart_3"></canvas>
@@ -59,7 +59,7 @@
                   <p class="text-white mb-0">Total Deposit</p>
                   <h4 class="fw-semibold text-white my-2">${{ number_format($deposit, 2) ?? '' }}</h4>
                 </div>
-                <img src="assets/img/crypto/dogecoin.png" alt="">
+{{--                <img src="assets/img/crypto/dogecoin.png" alt="">--}}
               </div>
               <div  class="chart">
                 <canvas id="chart_4"></canvas>
@@ -74,7 +74,7 @@
                   <p class="text-white mb-0">Total Withdrawal</p>
                   <h4 class="fw-semibold text-white my-2">${{ number_format($withdrawal, 2) ?? '' }}</h4>
                 </div>
-                <img src="assets/img/crypto/binance.png" alt="">
+{{--                <img src="assets/img/crypto/binance.png" alt="">--}}
               </div>
               <div class="chart">
                 <canvas id="chart_5"></canvas>
