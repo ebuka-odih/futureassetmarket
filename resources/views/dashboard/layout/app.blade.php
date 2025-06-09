@@ -26,8 +26,7 @@
         <div class="sidebar-heading">
             <a href="{{ route('index') }}">
                 {{--            <h3>{{ env('APP_NAME') }}</h3>--}}
-{{--                <img style="margin-left: -80px; margin-top: -30px" src="{{ asset('img/logo2.png') }}" alt="logo"--}}
-{{--                     width="280" height="80">--}}
+                <img  src="{{ asset('img2/logo2.png') }}" alt="logo" height="50">
             </a>
         </div>
         <nav class="sidebar mb-4">
