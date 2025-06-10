@@ -123,10 +123,15 @@ class UserController extends Controller
     }
 
 
+    public function kycStart()
+    {
+        $user = Auth::user();
+        return view('dashboard.user.kyc_1', compact('user'));
+    }
     public function kycform()
     {
         $user = Auth::user();
-        return view('dashboard.kyc', compact('user'));
+        return view('dashboard.user.kyc', compact('user'));
     }
     public function submitKyc(Request $request)
     {

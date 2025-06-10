@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Http\Controllers\BuyStockController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CopiedTradeController;
 use App\Http\Controllers\CryptoExchangeController;
 use App\Http\Controllers\DepositController;
@@ -21,6 +22,7 @@ Route::view('/', 'pages.index')->name('index');
 Route::view('/index', 'pages.index2')->name('index2');
 Route::view('/about', 'pages.about')->name('about');
 Route::view('/contact', 'pages.contact')->name('contact');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::view('/market/forex', 'pages.forex')->name('forex');
 Route::view('/market/stock', 'pages.stocks')->name('stock');
 Route::view('/market/crypto', 'pages.crypto')->name('crypto');
@@ -42,6 +44,7 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('profile', [UserController::class, 'profile'])->name('profile');
     Route::post('update/profile/{id}', [UserController::class, 'updateProfile'])->name('updateProfile');
     Route::post('update/password/', [UserController::class, 'updatePassword'])->name('updatePassword');
+    Route::get('start_kyc/', [UserController::class, 'kycStart'])->name('kycStart');
     Route::get('kyc_form/', [UserController::class, 'kycform'])->name('kycform');
     Route::post('store/kyc_form/', [UserController::class, 'submitKyc'])->name('submitKyc');
 

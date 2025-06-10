@@ -397,7 +397,7 @@
                                     <div class="widget-content">
                                         <ul class="links-list clearfix">
                                             <li><a href="{{ route('about') }}">Who we are</a></li>
-                                            {{--                                                <li><a href="contact.html">Contact us</a></li>--}}
+                                            <li><a href="{{ route('contact') }}">Contact us</a></li>
                                         </ul>
                                     </div>
                                 </div>
