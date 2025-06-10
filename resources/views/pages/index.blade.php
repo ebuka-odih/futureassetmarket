@@ -813,4 +813,12 @@
             </div>
         </section>
 
+     <section class="account-style-two clear-bg centred pt_80 pb_70">
+            <div class="auto-container">
+                <img src="{{ asset('img2/sponsor1.jpeg') }}" alt="">
+            </div>
+        </section>
+
+    
+
 @endsection
