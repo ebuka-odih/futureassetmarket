@@ -91,8 +91,9 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::post('store/trade/signal/', [TradeSignalController::class, 'tradeSignalStore'])->name('tradeSignalStore');
     Route::get('trade-signal/history', [TradeSignalController::class, 'tradeSignalHistory'])->name('tradeSignalHistory');
 
-    Route::get('copy-trades', [CopiedTradeController::class, 'index'])->name('copytrade.index');
-    Route::post('store/copytrades', [CopiedTradeController::class, 'store'])->name('copytrade.store');
+    Route::get('copy_trades', [CopiedTradeController::class, 'index'])->name('copytrade.index');
+    Route::post('store/copy_trades', [CopiedTradeController::class, 'store'])->name('copytrade.store');
+    Route::get('copy_trades/history', [CopiedTradeController::class, 'copiedHistory'])->name('copiedHistory');
 
 
 });

@@ -36,7 +36,7 @@
                                     <li class="nav-item" role="presentation">
                                         <a href="{{ route('user.tradeSignalHistory') }}" class="nav-link rounded-3 py-1"
                                            id="pills-deep-tab">
-                                            Copied History
+                                            Signal History
                                         </a>
                                     </li>
                                 </ul>
